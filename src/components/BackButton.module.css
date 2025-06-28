@@ -1,0 +1,10 @@
+.backButton {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.backSvgContainer {
+  cursor: pointer;
+  width: fit-content;
+}

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --prim-col: #21272b;
+  --secondary-col: #2b3237;
+  --secondary-text-col: #606972;
+  --secsec-text-col: #797979;
+  --white: #fdfbf9;
+}
+
+.parent {
+  padding-top: env(safe-area-inset-top);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-family: Poppins;
+  width: 100%;
+  color: var(--white);
+}
+
+.headingDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.exerciseName {
+  color: #fdfbf9;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.targetMuscleGroup {
+  color: var(--secsec-text-col);
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.exerciseParametersContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 8rem);
+  width: 100vw;
+}
+
+.exerciseParameterBlock {
+  border: 1px solid rgba(253, 251, 249, 0.116);
+  justify-self: center;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.parameterValue {
+  line-height: 1.8;
+  color: rgba(253, 251, 249, 0.87);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem; /* 130% */
+}
+
+.parameterLabel {
+  color: #606972;
+  font-family: Poppins;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.spinnerContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 768px){
+  .exerciseParametersContainer{
+    width: 60%;
+  }
+}

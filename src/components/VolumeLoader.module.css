@@ -1,0 +1,25 @@
+.loaderContainer {
+  /* padding-top: 2.5rem;
+  padding-bottom: 1rem; */
+  position: relative;
+}
+
+.volumeText {
+  color: var(--secondary-text-col);
+  text-align: center;
+  margin-top: 0.5rem;
+  max-width: 500rem;
+  font-size: 1.8rem;
+  opacity: 0;
+}
+
+.volumeHighlightedText {
+  color: var(--white);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%);
+}

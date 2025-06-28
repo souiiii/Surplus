@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --prim-col: #21272b;
+  --secondary-col: #2b3237;
+  --secondary-text-col: #606972;
+  --secsec-text-col: #797979;
+  --white: #fdfbf9;
+}
+
+.parent {
+  padding-top: env(safe-area-inset-top);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  font-family: Poppins;
+  max-width: 100rem;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.addSetContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+}
+
+.heading {
+  color: var(--white);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.addButton {
+  margin-top: 1rem;
+}
+
+.inspirationalTextDiv {
+  color: var(--secsec-text-col);
+  width: 90%;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.inspirationalTextItalics {
+  font-style: italic;
+}

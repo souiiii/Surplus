@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --prim-col: #21272b;
+  --secondary-col: #2b3237;
+  --secondary-text-col: #606972;
+  --secsec-text-col: #797979;
+  --white: #fdfbf9;
+}
+
+.weekDay {
+  width: 12%;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--secondary-col);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 4rem;
+  font-size: 1.4rem;
+}
+
+.selectedDay {
+  background-color: var(--white);
+  color: var(--prim-col);
+  /* font-weight: 800; */
+}
+
+.disabled {
+  color: var(--secondary-text-col);
+  background-color: var(--secondary-col);
+  pointer-events: none;
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --prim-col: #21272b;
+  --secondary-col: #2b3237;
+  --secondary-text-col: #606972;
+  --secsec-text-col: #797979;
+  --white: #fdfbf9;
+}
+
+.loader {
+  font-size: 2rem; /* Adjust font size as needed */
+  font-family: "Poppins"; /* Monospace font for typing effect */
+  overflow: hidden; /* Hides the excess characters */
+  border-right: 0.15em solid var(--white); /* Cursor effect */
+  font-weight: 900;
+  white-space: nowrap; /* Keeps the text in one line */
+  color: var(--white);
+
+  animation:
+    typing 1s steps(10),
+    blink-caret 0.4s step-end infinite alternate;
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%; /* Adjust to the length of your text */
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent; /* Cursor disappears */
+  }
+}

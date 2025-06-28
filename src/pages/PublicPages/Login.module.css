@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --prim-col: #21272b;
+  --secondary-col: #2b3237;
+  --secondary-text-col: #606972;
+  --secsec-text-col: #797979;
+  --white: #fdfbf9;
+}
+
+.parent {
+  padding-top: env(safe-area-inset-top);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: Poppins;
+  width: 100%;
+  color: var(--white);
+}
+
+.loginContainer {
+  transform: translateY(-4vh);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.surplus{
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.loginAccountHeading {
+  color: var(--white);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+}
+
+.signInWithGoogleButton {
+  padding: 0;
+  font-size: 1.5rem;
+  border-radius: 0;
+  border-radius: 50%;
+  padding: 0.5rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guideForEmailLogin {
+  color: var(--secsec-text-col);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.signInButton {
+  margin-top: 1.5rem;
+}
+
+.signUpReroutingDiv {
+  position: absolute;
+  bottom: 4vh;
+}
+
+.signUpRerouteText {
+  color: var(--secondary-text-col);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.signUpRerouteLink {
+  text-decoration: none;
+  color: var(--white);
+  font-family: Poppins;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.message {
+  position: absolute;
+  bottom: 15vh;
+}
+
+
+@media (max-width: 768px) {
+  .guideForEmailLogin, .signInWithGoogleButton{
+    display: none;
+  }
+
+  .surplus{
+    display: flex;
+  }
+ 
+}

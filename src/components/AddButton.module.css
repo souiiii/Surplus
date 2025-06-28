@@ -1,0 +1,27 @@
+.addWorkoutButton {
+  position: fixed;
+  bottom: 7rem;
+  z-index: 999;
+  right: 10%;
+}
+
+.plusSvgContainer {
+  background-color: var(--white);
+  aspect-ratio: 1/1;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+@media (min-width: 768px){
+  .addWorkoutButton{
+    right: 15%;
+  }
+
+  .plusSvgContainer{
+    width: 4rem;
+  }
+}

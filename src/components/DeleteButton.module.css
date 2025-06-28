@@ -1,0 +1,10 @@
+.svgContainer {
+  position: absolute;
+  top: -17%;
+  right: -1.5%;
+  cursor: pointer;
+}
+
+.svg {
+  width: 1.6rem;
+}

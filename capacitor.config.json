@@ -1,0 +1,19 @@
+{
+  "appId": "com.yourname.surplus",
+  "appName": "Surplus",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "iosScheme": "https"
+  },
+  "plugins": {
+    "FirebaseAuthentication": {
+      "skipNativeAuth": false,
+      "providers": ["google.com"],
+      "web": {
+        "googleClientId": "550295844324-d3qurg86dujmunn3omjda49f92rvamvq.apps.googleusercontent.com"
+      }
+    }
+  }
+}

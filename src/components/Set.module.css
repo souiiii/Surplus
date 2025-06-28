@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap");
+
+:root {
+  --prim-col: #21272b;
+  --secondary-col: #2b3237;
+  --secondary-text-col: #606972;
+  --secsec-text-col: #797979;
+  --white: #fdfbf9;
+}
+
+.setContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--secondary-col);
+  width: 95%;
+  padding-block: 0.6rem;
+  padding-right: 0.6rem;
+  border-radius: 10px;
+  position: relative;
+  max-width: 430px;
+}
+
+.setNumberContainer {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -5%; /* or any angle */
+}
+
+.setNumber {
+  color: var(--secondary-text-col);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Stencil";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.15188rem;
+}
+
+.setParametersContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  color: rgba(253, 251, 249, 0.87);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.parameterDiv {
+  color: rgba(253, 251, 249, 0.33);
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-style: normal;
+  background-color: var(--prim-col);
+  padding-block: 1.5rem;
+  font-weight: 400;
+  height: 100%;
+  line-height: normal;
+  letter-spacing: -0.0375rem;
+  border-radius: 15px;
+}
+
+.div1 {
+  width: 35%;
+}
+
+.div2 {
+  width: 25%;
+}
+
+.div3 {
+  width: 35%;
+}
+
+.parameterValues {
+  color: rgba(253, 251, 249, 0.87);
+  font-family: "Big Shoulders";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.18rem;
+}
+
+.parameterLabels {
+  color: rgba(253, 251, 249, 0.33);
+  font-family: Poppins;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.0375rem;
+}
+
+.highlightedValues {
+  color: var(--white);
+  font-family: "Big Shoulders";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.06rem;
+}
+
+.nonHighlightedValues {
+  color: var(--secondary-text-col);
+  font-family: "Big Shoulders";
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.06rem;
+}
