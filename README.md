@@ -1,16 +1,49 @@
-# React + Vite
+# 💪 Surplus – Workout Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Surplus is a sleek, responsive, and cross-platform workout tracking app built with **React**, **Firebase**, and **Capacitor**. Designed to simplify your fitness journey, Surplus lets you log exercises, track sets and reps, and view your workout history – all with a beautiful, minimal UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **Authentication**
+  - Email/password signup and login
+  - Google sign-in support
 
-## Expanding the ESLint configuration
+- 📅 **Daily Workout Logging**
+  - Add exercises with muscle groups and rest time
+  - Track multiple sets with reps and weight per exercise
+  - Automatically organized by date
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📖 **Workout History**
+  - Calendar interface to view past workouts
+  - Smooth navigation and visual overview of progress
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
+- ⚙️ **Cross-Platform**
+  - Built with Capacitor – runs on **web**, **Android**, and **iOS** with a single codebase
+
+- 💡 **Clean & Intuitive UI**
+  - Fully responsive design
+  - Animated, fluid interactions
+  - Dark mode optimized
+
+## 🛠 Tech Stack
+
+- **Frontend**: React + Tailwind CSS
+- **Backend**: Firebase (Auth + Firestore)
+- **Cross-Platform**: Capacitor
+- **Animations**: Framer Motion
+
+## 📦 Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/souiiii/Surplus.git
+cd surplus
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up Firebase
+# Create a Firebase project and add your config to /src/firebase/config.js
+
+# 4. Run the development server
+npm run dev
